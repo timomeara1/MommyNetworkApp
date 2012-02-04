@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @mom.user %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @mom.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_mom_path(@mom) %> |
+<%= link_to 'Back', moms_path %>
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Age:</b>
+  <%= @trait.age %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @trait.location %>
+</p>
+
+<p>
+  <b>Children:</b>
+  <%= @trait.children %>
+</p>
+
+<p>
+  <b>Activity:</b>
+  <%= @trait.activity %>
+</p>
+
+<p>
+  <b>Philanthropy:</b>
+  <%= @trait.philanthropy %>
+</p>
+
+<p>
+  <b>Mom:</b>
+  <%= @trait.mom_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_trait_path(@trait) %> |
+<%= link_to 'Back', traits_path %>

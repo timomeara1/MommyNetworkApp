@@ -1,0 +1,33 @@
+<h1>Listing traits</h1>
+
+<table>
+  <tr>
+    <th>Age</th>
+    <th>Location</th>
+    <th>Children</th>
+    <th>Activity</th>
+    <th>Philanthropy</th>
+    <th>Mom</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @traits.each do |trait| %>
+  <tr>
+    <td><%= trait.age %></td>
+    <td><%= trait.location %></td>
+    <td><%= trait.children %></td>
+    <td><%= trait.activity %></td>
+    <td><%= trait.philanthropy %></td>
+    <td><%= trait.mom_id %></td>
+    <td><%= link_to 'Show', trait %></td>
+    <td><%= link_to 'Edit', edit_trait_path(trait) %></td>
+    <td><%= link_to 'Destroy', trait, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Trait', new_trait_path %>

@@ -1,12 +1,12 @@
 <!DOCTYPE html Public>
 
-<div style="background: -webkit-radial-gradient(center, ellipse cover, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); width:580px;height:200px;border:7px outset blue;">
+<div style="background: -webkit-radial-gradient(center, ellipse cover, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); width:500px;min-height:100px;border:7px outset blue;">
 
 
  
 <div id="companyname">The Mommy Network </div> 
 
-<div id="companycatch">social networking for moms on the go! </div>
+<div id="companycatch">social networking for moms! </div>
 
 <br />
 <br />
@@ -23,12 +23,12 @@
   </tr>
 
 
-<% @moms.each do |mom| %>
+<% @mom.each do |mom| %>
   <tr>
     <td><%= mom.user %></td>
     <td><%= mom.email %></td>
     <td><%= link_to 'Show', mom %></td>
-    <td><%= link_to 'Edit', edit_mom_path(mom) %></td>
+    <td><%= link_to 'Edit', edit_trait_path(mom) %></td>
     <td><%= link_to 'Destroy', mom, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>

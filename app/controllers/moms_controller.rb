@@ -2,7 +2,7 @@ class MomsController < ApplicationController
   # GET /moms
   # GET /moms.json
   def index
-    @moms = Mom.all
+    @mom = Mom.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -26,6 +26,8 @@ class MomsController < ApplicationController
   # GET /moms/new.json
   def new
     @mom = Mom.new
+  
+  
 
     respond_to do |format|
       format.html # new.html.erb
@@ -42,6 +44,8 @@ class MomsController < ApplicationController
   # POST /moms.json
   def create
     @mom = Mom.new(params[:mom])
+
+   
 
     respond_to do |format|
       if @mom.save

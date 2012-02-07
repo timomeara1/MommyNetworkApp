@@ -13,7 +13,8 @@ class MomsController < ApplicationController
   # GET /moms/1
   # GET /moms/1.json
   def show
-    @mom = Mom.find(params[:id])
+   @mom = Mom.find(params[:id])
+   @traits = Mom.find_by_id(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

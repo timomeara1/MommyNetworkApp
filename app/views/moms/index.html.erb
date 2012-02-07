@@ -1,5 +1,18 @@
-<h1>Listing moms</h1>
+<!DOCTYPE html Public>
 
+<div style="background: -webkit-radial-gradient(center, ellipse cover, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); width:580px;height:200px;border:7px outset blue;">
+
+
+ 
+<div id="companyname">The Mommy Network </div> 
+
+<div id="companycatch">social networking for moms on the go! </div>
+
+<br />
+<br />
+<div id="header">Local Moms</div>
+
+<div id="body">
 <table>
   <tr>
     <th>User</th>
@@ -8,6 +21,7 @@
     <th></th>
     <th></th>
   </tr>
+
 
 <% @moms.each do |mom| %>
   <tr>
@@ -18,8 +32,33 @@
     <td><%= link_to 'Destroy', mom, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
+
+</div>
 </table>
 
 <br />
 
 <%= link_to 'New Mom', new_mom_path %>
+
+
+<br />
+
+<br />
+
+<a href="mailto:tim@mommynetwork.com" class="button">					
+						Send Us an Email!
+					</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
